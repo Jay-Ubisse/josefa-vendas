@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { List, X, ShoppingBag } from "@phosphor-icons/react";
+import { HashLink } from "react-router-hash-link";
 import { cart } from "../data/products"
 
 export const Header = () => {
@@ -50,24 +51,20 @@ export const Header = () => {
             >
               Loja
             </NavLink>
-            <NavLink
-              to="/bobre"
-              className={({ isActive }) =>
-                `hover:border-b border-green-700 pb-2 ${isActive ? "border-b border-green-700 pb-2 font-semibold" : "border-none"
-                }`
-              }
+            <HashLink
+              to="/#about"
+              className="hover:border-b border-green-700 pb-2"
+              onClick={() => setMenuState(false)}
             >
               Sobre nós
-            </NavLink>
-            <NavLink
-              to="/contacto"
-              className={({ isActive }) =>
-                `hover:border-b border-green-700 pb-2 ${isActive ? "border-b border-green-700 pb-2 font-semibold" : "border-none"
-                }`
-              }
+            </HashLink>
+            <HashLink
+              to="/#contact"
+              className="hover:border-b border-green-700 pb-2"
+              onClick={() => setMenuState(false)}
             >
               Contacto
-            </NavLink>
+            </HashLink>
           </nav>
         </div>
         <div className="flex gap-4">

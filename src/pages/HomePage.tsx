@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { Header } from "../components/Header"
 import { WhatsappButton } from "../components/WhatsappButton"
 import { products } from "../data/products"
+import { Footer } from "../components/Footer"
 
 export const HomePage = () => {
 
@@ -94,7 +95,36 @@ export const HomePage = () => {
             }
           })}
         </section>
+        <h1 id="about" className="text-green-700 font-bold mobile:text-2xl text-center mt-10">
+          Sobre nós
+        </h1>
+        <hr className="bg-green-700 h-1 w-[30%] rounded-lg mt-2 mb-8 mx-auto" />
+        <section className="bg-home-background bg-cover">
+          <div className="bg-yellow-200/90 w-full h-full p-5">
+            <p className="font-normal text-slate-800 text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident facere sit. Harum nesciunt possimus nam, quibusdam, laborum cumque debitis libero similique consectetur earum magni consequatur eligendi reiciendis, odit corrupti!
+            </p>
+            <form className="flex flex-col gap-2 w-full mx-auto mt-5">
+              <label className="text-slate-800 text-sm font-bold text-center">
+                Inscreva-se para receber actualizações
+              </label>
+              <input
+                type="text"
+                placeholder="Insira o seu email aqui"
+                required
+                className="bg-transparent outline-none focus:outline-none border-2 border-green-700 px-2 h-12 placeholder:text-slate-800 text-white"
+              />
+              <button
+                type="submit"
+                className="bg-green-700 text-white h-12 border-2 border-green-700 hover:bg-green-600 text-base"
+              >
+                Inscrever-se
+              </button>
+            </form>
+          </div>
+        </section>
         <WhatsappButton />
+        <Footer />
       </main>
     </div>
   )
