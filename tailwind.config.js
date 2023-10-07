@@ -11,7 +11,16 @@ export default {
       'laptop': '1024px',
       'desktop': '1440px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        'app-green': {
+          100: '#8cb369',
+        },
+        'app-yellow': {
+          100: '#f4e285',
+        },
+      },
+    },
   },
   plugins: [require("daisyui")],
 }
