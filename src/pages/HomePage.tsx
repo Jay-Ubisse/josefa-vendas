@@ -41,7 +41,7 @@ export const HomePage = () => {
                 <>
                   <div
                     key={product.id}
-                    className="card w-[96%] mx-auto glass my-5 shadow-lg shadow-slate-400"
+                    className="card w-[90%] mx-auto glass my-5 shadow-lg shadow-slate-400"
                   >
                     <figure>
                       <img src={product.imageUrl} alt="Product Image" />
@@ -72,7 +72,7 @@ export const HomePage = () => {
                 <>
                   <div
                     key={product.id}
-                    className="card w-[96%] mx-auto glass my-5 shadow-lg shadow-slate-400"
+                    className="card w-[90%] mx-auto glass my-5 shadow-lg shadow-slate-400"
                   >
                     <figure>
                       <img src={product.imageUrl} alt="Product Image" />
